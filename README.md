@@ -1,6 +1,6 @@
 # KMP Algoritması C++ Implementasyonu
 
-Bu repo, Knuth-Morris-Pratt (KMP) string arama algoritmasının C++ dilinde bir implementasyonunu içerir. KMP algoritması, bir metin içerisinde belirli bir örüntünün (pattern) oluşumlarını verimli bir şekilde bulmak için kullanılır.
+Bu repo, Knuth-Morris-Pratt (KMP) string arama algoritmasının C++ için entegrasyonunu içerir. KMP algoritması, bir metin içerisinde belirli bir örüntünün (pattern) oluşumlarını verimli bir şekilde bulmak için kullanılır.
 
 ## Algoritmanın Çalışma Prensibi
 
@@ -39,17 +39,14 @@ KMP algoritması iki ana bölümden oluşur:
 ## Nasıl Kullanılır?
 
 1.  **Derleme:**
-    Bir C++ derleyicisi (örneğin clang++) kullanarak `kmp.cpp` dosyasını derleyin:
-    ```bash
+    Bir C++ derleyicisi (örneğin clang++) kullanarak `kmp.cpp` dosyasını derleyin.
 
 2.  **Çalıştırma:**
-    Derlenen programı çalıştırın:
-    ```bash
-    ./kmp_search
-    ```
-    Program, `main` fonksiyonunda tanımlanmış olan test senaryolarını çalıştıracak ve sonuçları konsola yazdıracaktır.
+    Derlenen programı çalıştırın.
+    
+    Terminal ekranında program, `main` fonksiyonunda kullanıcının girdiği metin ve aranacak örüntü doğrultusunda sonuçları konsola yazdıracaktır.
 
-## Test Senaryoları
+## Örnek Test Senaryoları
 
 1.  Metin: "ABABDABACDABABCABAB", Örüntü: "ABABC"
     *   Beklenen Çıktı: Örüntü 10. indekste bulundu.
@@ -57,14 +54,8 @@ KMP algoritması iki ana bölümden oluşur:
     *   Beklenen Çıktı: Örüntü 0. indekste bulundu. Örüntü 1. indekste bulundu. Örüntü 6. indekste bulundu.
 3.  Metin: "THIS IS A TEST TEXT", Örüntü: "TEST"
     *   Beklenen Çıktı: Örüntü 10. indekste bulundu.
-4.  Metin: "AABAACAADAABAABA", Örüntü: "AABA"
-    *   Beklenen Çıktı: Örüntü 0. indekste bulundu. Örüntü 9. indekste bulundu. Örüntü 12. indekste bulundu.
-5.  Metin: "ABCDE", Örüntü: "FGH"
+4.  Metin: "ABCDE", Örüntü: "FGH"
     *   Beklenen Çıktı: Örüntü metin içinde bulunamadı.
-6.  Metin: "abababa", Örüntü: "aba"
-    *   Beklenen Çıktı: Örüntü 0. indekste bulundu. Örüntü 2. indekste bulundu. Örüntü 4. indekste bulundu.
-7.  Metin: "abcabcabc", Örüntü: "abcabc"
-    *   Beklenen Çıktı: Örüntü 0. indekste bulundu. Örüntü 3. indekste bulundu.
 
 ## Zaman ve Alan Karmaşıklığı
 
@@ -73,7 +64,8 @@ KMP algoritması iki ana bölümden oluşur:
     *   `m`: Örüntünün uzunluğu
     *   LPS dizisi oluşturma `O(m)` sürer.
     *   Arama aşaması `O(n)` sürer.
+
 *   **Alan Karmaşıklığı:** `O(m)`
     *   LPS dizisini saklamak için ek alan gerekir.
 
-Bu implementasyon, KMP algoritmasının temel prensiplerini ve C++'da nasıl uygulanabileceğini göstermektedir. String arama problemlerinde verimli bir çözüm sunar.
+Bu implementasyon, KMP algoritmasının temel prensiplerini ve C++'da nasıl kullanılabileceğini göstermektedir. String arama problemlerinde verimli bir çözüm sunar.
