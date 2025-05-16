@@ -129,3 +129,7 @@ Toplam zaman karmaşıklığı: `O(n + m)`
    * Örüntünün uzunluğuna bağlı olarak `O(m)` ek alan gerektirir.
 
 Genel alan karmaşıklığı: `O(m)`
+
+## Kaynakça
+
+https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/
